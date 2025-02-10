@@ -56,5 +56,3 @@ make
 - 🔗 [GNU libc manual](https://www.gnu.org/software/libc/manual/html_mono/libc.html)
 - 🔗 [musl libc source](https://elixir.bootlin.com/musl/latest/source)
 - 🔗 [Linux man pages](https://man7.org/linux/man-pages/index.html)
-
-🚀 **Ready to build your own libc? Let's go!** 🛠️
