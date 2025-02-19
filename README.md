@@ -56,3 +56,6 @@ make
 - 🔗 [GNU libc manual](https://www.gnu.org/software/libc/manual/html_mono/libc.html)
 - 🔗 [musl libc source](https://elixir.bootlin.com/musl/latest/source)
 - 🔗 [Linux man pages](https://man7.org/linux/man-pages/index.html)
+
+### 📜 Licence
+This project is licensed under the MIT Licence. See the [LICENCE](./LICENSE) file for further details.
