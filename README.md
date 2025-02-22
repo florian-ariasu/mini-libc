@@ -1,4 +1,4 @@
-## 🚀 Mini-libc: A Minimalist Standard C Library Implementation
+## Mini-libc: A Minimalist Standard C Library Implementation
 
 ### 🌟 Overview
 Welcome to **mini-libc**, a lightweight and freestanding implementation of the **standard C library** for Linux systems! This project is built from the ground up to replace the default system libc, relying solely on Linux system calls. By crafting a minimal yet functional libc, you'll dive deep into **string manipulation, memory management, and low-level file I/O** operations.
@@ -12,41 +12,41 @@ Welcome to **mini-libc**, a lightweight and freestanding implementation of the *
 
 ### 🔧 Core Features
 
-#### 📜 String Manipulation (`<string.h>`)  
+#### String Manipulation (`<string.h>`)  
 Efficient string-handling functions:
-- `strcpy()` / `strncpy()` ✅
-- `strcat()` / `strncat()` ✅
-- `strlen()` ✅
-- `strcmp()` / `strncmp()` ✅
-- `strstr()` / `strrstr()` ✅
-- `memcpy()` / `memmove()` ✅
-- `memset()` / `memcmp()` ✅
+- `strcpy()` / `strncpy()`
+- `strcat()` / `strncat()`
+- `strlen()`
+- `strcmp()` / `strncmp()`
+- `strstr()` / `strrstr()`
+- `memcpy()` / `memmove()`
+- `memset()` / `memcmp()`
 
-#### 📝 Input/Output (`<stdio.h>`)
-- `puts()` – Simple **string printing** via `syscall(__NR_write)` 📢
+#### Input/Output (`<stdio.h>`)
+- `puts()` – Simple **string printing** via `syscall(__NR_write)`
 
-#### 📂 File & Process Control (`<unistd.h>`, `<sys/fcntl.h>`, `<sys/stat.h>`)
+#### File & Process Control (`<unistd.h>`, `<sys/fcntl.h>`, `<sys/stat.h>`)
 Essential **POSIX-compliant file operations**:
-- `open()` / `close()` 🔑
-- `lseek()` 🔄
-- `stat()` / `fstat()` 📊
-- `truncate()` / `ftruncate()` ✂️
+- `open()` / `close()`
+- `lseek()`
+- `stat()` / `fstat()`
+- `truncate()` / `ftruncate()`
 
-#### ⏳ Time Utilities (`<time.h>`)  
-- `nanosleep()` / `sleep()` 💤
+#### Time Utilities (`<time.h>`)  
+- `nanosleep()` / `sleep()`
 
-#### 🧠 Memory Management (`<stdlib.h>`, `<sys/mman.h>`)  
+#### Memory Management (`<stdlib.h>`, `<sys/mman.h>`)  
 Lightweight **dynamic memory allocation**:
-- `malloc()` / `free()` 🔄
-- `calloc()` ✅
-- `realloc()` / `reallocarray()` 🔧
-- `mmap()` / `mremap()` / `munmap()` 🗂️
+- `malloc()` / `free()`
+- `calloc()`
+- `realloc()` / `reallocarray()`
+- `mmap()` / `mremap()` / `munmap()`
 
-#### 🚨 Error Handling (`<errno.h>`)  
-- `errno` variable management for **system call failures** ❌
+#### Error Handling (`<errno.h>`)  
+- `errno` variable management for **system call failures**
 
 ### 🏗️ Build & Installation
-#### 🔨 Compiling mini-libc
+#### Compiling mini-libc
 ```bash
 cd src/
 make
